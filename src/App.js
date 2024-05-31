@@ -19,16 +19,16 @@ function App() {
 
       return ( <div>
         <div className ='head' key={id}>
-        <div className ='top'>
+        <div>
           <h2>{id} - {name}</h2>
         </div>
-        <div className ='top'> 
+        <div> 
           <img src={image} alt="foto" width="250px"/>
         </div>
-        <div className ='top'> 
+        <div> 
           <h4>{options}</h4>
         </div>
-        <div className ='top'> 
+        <div> 
           <h3>{location}</h3>
         </div>
         <div> 
