@@ -17,28 +17,17 @@ function App() {
     {towers.map((element => {
       const{id, name, options, location, description, image} = element;
 
-      return ( <div>
-        <div className ='head' key={id}>
-        <div>
+      return ( <div key={id}>
+        <div className ='head' >
+        
           <h2>{id} - {name}</h2>
-        </div>
-        <div> 
           <img src={image} alt="foto" width="250px"/>
-        </div>
-        <div> 
           <h4>{options}</h4>
-        </div>
-        <div> 
           <h3>{location}</h3>
-        </div>
-        <div> 
           <h4>{description}</h4>
-        </div>
-        <div>
           <button onClick={()=> {removeTower(id)}}>Remove</button>
         </div>
-      </div>
-      </div>
+              </div>
     );
     }))}
     <div className='top'>
